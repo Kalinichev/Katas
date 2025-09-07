@@ -56,7 +56,7 @@ def get_root_property(dict_, value):
             if value in dict_[i]:
                 return i
         else:
-            if answer := get_root_property(dict_[i], value):
+            if get_root_property(dict_[i], value):
                 return i
 
 
